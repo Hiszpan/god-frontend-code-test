@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --dark: #141414;
+  --gray: #707070;
+  --gray-light: #ebebeb;
+  --link: hsl(214deg 57% 45%);
+  --link-hover: hsl(214deg 57% 25%);
+}

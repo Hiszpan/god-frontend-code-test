@@ -1,0 +1,104 @@
+.container {
+  cursor: grab;
+}
+
+.model {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.bodyType {
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.modelType {
+  color: var(--gray);
+  margin-top: 0.4em;
+  font-weight: 500;
+}
+
+.model,
+.modelType,
+.bodyType,
+.bodyType {
+  font-size: 1em;
+}
+
+.preview {
+  margin-top: 2em;
+  padding-top: 75%;
+  position: relative;
+}
+
+.model,
+.modelType {
+  flex-shrink: 0;
+}
+
+.row {
+  margin-top: 0.4em;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 1em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.link {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--link);
+  font-size: 0.8em;
+  flex-shrink: 0;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--link-hover);
+}
+
+.link:after {
+  content: "\003E";
+  margin-left: 0.3em;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+
+@media screen and (min-width: 768px) {
+  .model,
+  .modelType,
+  .bodyType,
+  .bodyType {
+    font-size: 1.5em;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .model {
+    margin-right: 0.5em;
+  }
+
+  .modelType {
+    margin-top: 0;
+  }
+
+  .actions {
+    column-gap: 3em;
+  }
+
+  .link {
+    font-size: 1.5em;
+  }
+}

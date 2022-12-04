@@ -1,0 +1,64 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.model {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.bodyType {
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.modelType {
+  color: var(--gray);
+  margin-top: 0.4em;
+  font-weight: 500;
+}
+
+.model,
+.modelType,
+.bodyType,
+.bodyType {
+  font-size: 1.5em;
+}
+
+.preview {
+  margin-top: 2em;
+  padding-top: 75%;
+  position: relative;
+}
+
+.model,
+.modelType {
+  flex-shrink: 0;
+}
+
+.row {
+  margin-top: 0.4em;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.model {
+  margin-right: 0.5em;
+}
+
+.modelType {
+  margin-top: 0;
+}
+
+.link {
+  font-weight: 500;
+  color: var(--link);
+  font-size: 1.5em;
+  flex-shrink: 0;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 2em;
+}
