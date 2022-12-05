@@ -8,10 +8,11 @@
   color: var(--dark);
 }
 
-.bodyType {
-  color: var(--gray);
+.price {
+  color: var(--link);
   text-transform: uppercase;
   font-weight: 500;
+  margin-top: 0.4em;
 }
 
 .modelType {
@@ -22,7 +23,7 @@
 
 .model,
 .modelType,
-.bodyType {
+.price {
   font-size: 1.5em;
 }
 
@@ -60,9 +61,4 @@
   cursor: pointer;
   text-decoration: none;
   margin-top: 2em;
-}
-
-.description {
-  margin-top: 1em;
-  line-height: 1.5;
 }

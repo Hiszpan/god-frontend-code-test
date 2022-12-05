@@ -63,6 +63,20 @@
   }
 }
 
+.filters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--gray-light);
+  padding: 0.5em 2em;
+  z-index: 2;
+}
+
+.filter {
+  margin-left: 1em;
+}
+
 /* Navigation */
 @media screen and (min-width: 1600px) {
   .swiper :global .swiper-button-next,
@@ -74,8 +88,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px var(--dark) solid;
-    border-radius: 50%;
     width: 3em;
     height: 3em;
     overflow: hidden;
@@ -109,18 +121,13 @@
 
   .swiper :global .swiper-button-prev {
     right: 67px;
-  }
-
-  .swiper :global .swiper-button-prev:after {
-    content: "\003C";
+    background: url("/images/chevron-circled.svg") no-repeat center;
+    transform: rotate(180deg);
   }
 
   .swiper :global .swiper-button-next {
     right: 0;
-  }
-
-  .swiper :global .swiper-button-next:after {
-    content: "\003E";
+    background: url("/images/chevron-circled.svg") no-repeat center;
   }
 
   .swiper :global .swiper-button-lock {
